@@ -1,0 +1,10 @@
+<h1>Texts</h1>
+<table border="1">
+<% for text in @texts do %>
+  <tr>
+    <td><%=link_to_remote  (h text.title), :url => {:action => 'display_text', :id => text.id}, :update => 'text_field'%></td>
+  </tr>
+<% end %>
+</table>
+
+<div id='text_field'></div>

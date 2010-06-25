@@ -1,0 +1,12 @@
+<% form_tag 'javascript:void(0)', :id => 'words' do %>
+  <p><%= text_field_tag 'word_1' %></p>
+  <p><%= text_field_tag 'word_2' %></p>
+
+  <%= observe_form :words,
+                  :frequency => 0.1,
+                  :update => 'result_area',
+                  :url => {:action => 'compute'}
+%>
+<% end %>
+
+<div id="result_area">Result?</div>

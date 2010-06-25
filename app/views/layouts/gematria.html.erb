@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Bible code</title>
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body>
+<div id="header">
+  <h1>גימטריה</h1>
+  <!--
+  <div id="menu">
+    <ul id="nav">
+        <li><%= link_to "Show texts", :action => "show_texts" %></li>
+        <li><%= link_to "Add text", :action => "add_text" %></li>
+    </ul>
+  </div>
+  -->
+</div>
+<div id="content">
+  <div id="right">
+    <div class="box">
+      <%= yield  %>
+    </div>
+  </div>
+</div>
+</body>
+</html>
